@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,57 +7,22 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/editTextTextPersonName"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textSize="42sp"
-        android:fontFamily="cursive"
-        android:background="@color/black"
-        android:textColor="@color/white"/>
+        android:orientation="vertical">
 
+        <include
+            layout="@layout/activity_main1"
+            android:layout_width="match_parent"
+            android:layout_height="680dp"
+            android:layout_gravity="fill_vertical"/>
 
-    <EditText
-        android:id="@+id/editPersonName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="cursive"
-        android:hint="name"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:textSize="42sp" />
+        <include
+            layout="@layout/activity_main2"
+            android:layout_width="match_parent"
+            android:layout_height="680dp"/>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Switch"
-        android:fontFamily="cursive"
-        android:textSize="24sp" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CheckBox"
-        android:fontFamily="cursive"
-        android:textSize="24sp" />
-
-
-    <ToggleButton
-        android:id="@+id/toggle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ToggleButton"
-        android:fontFamily="cursive"
-        android:textSize="24sp" />
-
-
-</LinearLayout>
