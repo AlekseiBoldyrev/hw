@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:inputType="text"
+        android:text="Text"
+        android:background="#C3D1DB"
+        android:textSize="42sp" />
+
+    <EditText
+        android:id="@+id/editPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:inputType="textPersonName"
+        android:background="#AEF0E0"
+        android:text="PersonName"
+        android:textSize="42sp" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:inputType="phone"
+        android:text="Phone"
+        android:background="#F8A6CD"
+        android:textSize="40sp"
+        android:ems="15"/>
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:inputType="number"
+        android:text="Number"
+        android:background="#EAF5A9"
+        android:textSize="40sp"
+        android:ems="15"/>
+
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:inputType="textPassword"
+        android:text="Password"
+        android:background="#FCB3A2"
+        android:textSize="40sp"
+        android:ems="15"/>
+
+    <EditText
+        android:id="@+id/textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:inputType="textEmailAddress"
+        android:text="EmailAddress"
+        android:background="#C3D1DB"
+        android:textSize="40sp"
+        android:ems="15"/>
+
+</LinearLayout>
